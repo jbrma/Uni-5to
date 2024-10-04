@@ -1,0 +1,14 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\IndexPQ.h(125,28): error C2064: term does not evaluate to a function taking 2 arguments
+  (compiling source file 'FileName.cpp')
+  C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\IndexPQ.h(125,28):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\FileName.cpp(47,23):
+  	see reference to class template instantiation 'IndexPQ<int,int>' being compiled
+  	C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\IndexPQ.h(122,9):
+  	while compiling class template member function 'void IndexPQ<int,int>::flotar(int)'
+  		C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\IndexPQ.h(59,16):
+  		see the first reference to 'IndexPQ<int,int>::flotar' in 'IndexPQ<int,int>::push'
+  		C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-1\FileName.cpp(55,21):
+  		see the first reference to 'IndexPQ<int,int>::push' in 'resuelveCaso'
+  
