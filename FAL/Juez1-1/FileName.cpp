@@ -3,30 +3,30 @@
 
 using namespace std;
 
-/*  Este problema consiste en que tenemos una serie de viñetas en las que vienen dadas las alturas de cada uno de los elementos. Queremos averiguar si
-*   cada una de las viñetas consiste en una de los hermanos Dalton o no. Para que una viñeta sea de los hermanos Dalton, las alturas deben de estar ordenadas
-*   de mayor a menor, o al contrario de menor a mayor. Para resolverlo, primero compruebo los 2 primeros elementos de una viñeta para averiguar si podría
-*   estar esa viñeta ordenada de menor a mayor o de mayor a menor. Dependiendo de cada caso, comprobamos en un bucle que se verifique una de las dos propiedades,
-*   hasta completar la viñeta.
+/*  Este problema consiste en que tenemos una serie de viï¿½etas en las que vienen dadas las alturas de cada uno de los elementos. Queremos averiguar si
+*   cada una de las viï¿½etas consiste en una de los hermanos Dalton o no. Para que una viï¿½eta sea de los hermanos Dalton, las alturas deben de estar ordenadas
+*   de mayor a menor, o al contrario de menor a mayor. Para resolverlo, primero compruebo los 2 primeros elementos de una viï¿½eta para averiguar si podrï¿½a
+*   estar esa viï¿½eta ordenada de menor a mayor o de mayor a menor. Dependiendo de cada caso, comprobamos en un bucle que se verifique una de las dos propiedades,
+*   hasta completar la viï¿½eta.
 *
-    ESPECIFICACIÓN:
-*       Precondición P: { N >= 2 && N <= 100000 && for all i: 0 <= i <= N : alturas[i] > 0 && alturas[i] <= 1000000 }
+    ESPECIFICACIï¿½N:
+*       Precondiciï¿½n P: { N >= 2 && N <= 100000 && for all i: 0 <= i <= N : alturas[i] > 0 && alturas[i] <= 1000000 }
 *       fun esDalton(vector<int> alturas) dev {bool dalton}
-*       Postcondición Q: { dalton : ((for all i: 0 <= i < alturas.size() : alturas[i] < alturas[i + 1]) || (for all j : 0 <= j < alturas.size() :
+*       Postcondiciï¿½n Q: { dalton : ((for all i: 0 <= i < alturas.size() : alturas[i] < alturas[i + 1]) || (for all j : 0 <= j < alturas.size() :
                             alturas[j] > alturas[j + 1])) }
 
     INVARIANTE:     En el cuerpo del bucle calculamos el booleano dalton.
         Inv : { dalton == ( (for all i : 0 <= i < alturas.size() : alturas[i] < alturas[i + 1]) || (for all j : 0 <= j < alturas.size() :
                              alturas[j] > alturas[j + 1]) ) && i <= alturas.size() && j <= alturas.size() }
 
-    FUNCIÓN DE COTA: Para demostrar la terminación del bucle. Esta es una función de las variables que intervienen en la condición del bucle que
+    FUNCIï¿½N DE COTA: Para demostrar la terminaciï¿½n del bucle. Esta es una funciï¿½n de las variables que intervienen en la condiciï¿½n del bucle que
                      es positiva y decrece en cada vuelta del bucle. La variable i crece en cada vuelta, por lo tanto -i decrece en cada vuelta.
-                     Para que la función sea positiva le sumamos un valor mayor que el máximo que puede tomar i. (Como el bucle empieza en i = 1, le sumamos
-                     1 a la función de cota para que sea positiva.
+                     Para que la funciï¿½n sea positiva le sumamos un valor mayor que el mï¿½ximo que puede tomar i. (Como el bucle empieza en i = 1, le sumamos
+                     1 a la funciï¿½n de cota para que sea positiva.
 
         t(i) = alturas.size() - i + 1.
 
-    COSTE: En cuanto al coste de la solución, es O(N) lineal, donde N es el número de elementos de la viñeta (alturas.size()).
+    COSTE: En cuanto al coste de la soluciï¿½n, es O(N) lineal, donde N es el nï¿½mero de elementos de la viï¿½eta (alturas.size()).
 */
 
 bool dalton(vector<int> const& alturas) {
@@ -49,7 +49,7 @@ bool dalton(vector<int> const& alturas) {
             j++;
         }
     }
-    else {      // los 2 primeros valores serían iguales
+    else {      // los 2 primeros valores serï¿½an iguales
         dalton = false;
     }
 

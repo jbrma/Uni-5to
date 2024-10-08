@@ -3,10 +3,12 @@
 
 using namespace std;
 
-/* ESPECIFICACI�N:
-* { Pre: (0 <= n <= longitud(num) < 100000) ^ 
-*		  (P.t. i : 0 <= i < n : -1000 <= num[i] <= 1000) }
-* { Post: ret = Ex. i : 0 <= i < n : num[i] = sum num[i+j] : i < j < n }
+/* ESPECIFICACIÓN:
+* { Pre: 0 <= n <= longitud(num) }
+* { Post: ret = Ex. i : 0 <= i < n : num[i] }
+* { Cota: i, es decreciente en cada iteración, por lo que el bucle terminará}
+* { Invariante: suma = suma(num[j] : i < j < n) }
+* { Complejidad: O(n) donde n es el numero de elementos del vector. Es lineal, ya que en el peor caso el bucle debe recorrer todo el vector y solo una vez.}
 */
 
 
