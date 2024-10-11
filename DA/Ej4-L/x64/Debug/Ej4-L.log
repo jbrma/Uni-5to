@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-L\Source.cpp(22,15): error C2429: language feature 'structured bindings' requires compiler flag '/std:c++17'
+C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-L\Source.cpp(28,20): error C2143: syntax error: missing ';' before ':'
+C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-L\Source.cpp(28,34): error C2143: syntax error: missing ';' before ')'
+C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-L\Source.cpp(28,31): error C2451: a conditional expression of type 'const Adys' is not valid
+  C:\Users\jorge\Documents\Uni - 5to\DA\Ej4-L\Source.cpp(28,31):
+  No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  
