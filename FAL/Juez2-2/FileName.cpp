@@ -4,53 +4,30 @@
 using namespace std;
 
 /* ESPECIFICACIÓN:
-* { Pre: (0 <= d <= 1000000) ^ (0 <= n <= longitud(v)) }
-* { Post: apta == ( ( P.t. i: 0 <= i < n - 1 : v[i+1] - v[i] <= d ) || 
-*				    ( Ex. j : 0 <= j < i : v[j+1] - v[j] > d ) ) }
+* { Pre: 0 <= n <= longitud(v) }
+* { Post: ( Ex. i : 0 <= i < n - 1 : (v[i+1] - v[i] + acumul) > d ) <=> !apta }
 * { Cota: n - i }
-* { Invariante: (0 <= i < n) ^ (0 <= acumul <= d) }
+* { Invariante: (0 <= i < n - 1) ^ (((v[i+1] - v[i]) + acumul) <= d) }
 * { Complejidad: O(n), donde n es el número de cotas de altura }
 */
 
 bool resuelve(int d, vector<int> const& v) {
-	bool apta = true;
+
 	int i = 0;
-	
-	bool asciende = (v[0] <= v[1]);
 	int acumul = 0;
 
-	while(i+1 < v.size() && apta) {
-	
-		if (asciende) {
+	while( i+1 < v.size() && (v[i + 1] - v[i] + acumul) <= d) {
 
-			if (v[i] < v[i + 1]) { // sigue ascendiendo 
-				acumul += v[i + 1] - v[i];
-
-				if (acumul > d)
-					apta = false;
-			}
-			else { // cambia a desciende
-				asciende = false;
-				acumul = 0;
-			}
+		if (v[i] < v[i + 1]) {
+			acumul += v[i + 1] - v[i];
 		}
-		else {
-
-			acumul = 0; // ahora desciende por lo que se omite la cantidad acumulada 
-
-			if (v[i] < v[i + 1]) { // cambia a asciende 
-				asciende = true;
-				acumul += v[i + 1] - v[i];
-
-				if (acumul > d)
-					apta = false;
-			}
-		}
+		else
+			acumul = 0;
 
 		i++;
 	}
 
-	return apta;
+	return i+1==v.size();
 }
 
 bool casoDePrueba() {
@@ -66,11 +43,8 @@ bool casoDePrueba() {
 		cin >> v[i];
 	}
 
-	if (n > 1)
-		cout << (resuelve(d, v) ? "APTA" : "NO APTA") << endl;
-	else
-		cout << "APTA\n";
-
+	cout << (resuelve(d, v) ? "APTA" : "NO APTA") << endl;
+	
 	return true;
 	
 }
