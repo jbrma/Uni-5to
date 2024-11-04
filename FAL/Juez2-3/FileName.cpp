@@ -1,41 +1,33 @@
 #include <iostream>
 #include <vector>
-#include <climits>
 
 using namespace std;
 
 /* ESPECIFICACIÓN:
 * { Pre: (0 <= n <= longitud(v)) ^ (0 <= p < n) }
-* { Post: ( Ex. i, j : 0 <= i <= p , p < j < n : v[i] > v[j] ) <=> !dividido }
+* { Post: ret = ( Ex. i, j : 0 <= i <= p , p < j < n : v[i] > v[j] ) <=> !dividido }
 * { Cota: n - i + 1}
-* { Invariante: (0 <= i < n) ^ ( max = P.t. i : 0 <= i <= p : max(v[i] ) 
-								 min = P.t. j : p < j < n : min(v[j])  ) }
+* { Invariante: (1 <= i <= n) ^ ( maxHastaP = max i : 0 <= i <= p : v[i] ) }
 * { Complejidad: O(n), donde n es el número de elementos del vector }
 */
 
 bool dividido(vector<int> const& v, int p) {
 
-	int i = 0;
-	int max = INT_MIN, min = INT_MAX;
+	int i = 1;
+	int maxHastaP = v[0];
 
 
-	while (i < v.size() && max < min) {
+	while (i <= p) {
 
-		if (i <= p) {
-
-			if (max < v[i])
-				max = v[i];
-		}
-		else {
-
-			if (min > v[i])
-				min = v[i];
-		}
-
+		maxHastaP = max(maxHastaP, v[i]);
 		i++;
 	}
 
-	return max < min;
+	while (i < v.size() && maxHastaP < v[i]) {
+		i++;
+	}
+
+	return i == v.size();
 }
 
 void casoDePrueba() {
