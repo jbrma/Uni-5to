@@ -5,7 +5,8 @@ using namespace std;
 
 int esqui(vector<int> const& v) {
 
-	int i = 1, tramoAct = 1, tramoMax = 0;
+	int i = 1, tramoAct = 1, tramoMax = 1;
+
 	while (i < v.size()) {
 
 		if (v[i - 1] >= v[i]) {
@@ -18,6 +19,8 @@ int esqui(vector<int> const& v) {
 
 		i++;
 	}
+
+	if (v.empty()) tramoMax = 0;
 
 	return tramoMax;
 }
