@@ -19,19 +19,19 @@ long long final(long long n, long long sol = 0, long long uds = 10) {
 	}
 }
 
-/// TERMINAR
 
-long long nofinal(long long n, long long uds = 10) {
+long long nofinal(long long n) {
 
 	if (n < 10) {
 		return n*10 + n;
 	}
 	else {
 
-		long long sum = nofinal(n / 10, uds*10);
-		int a = n % 10 * uds;
-		int b = n % 10 * uds / 10;
-		return sum * uds + a + b;
+		long long sum = nofinal(n / 10);
+		sum *= 100;
+		int a = n % 10 * 10;
+		int b = n % 10;
+		return sum + a + b;
 	}
 
 	return 0;
