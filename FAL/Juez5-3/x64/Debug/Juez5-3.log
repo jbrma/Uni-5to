@@ -1,0 +1,3 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-3\FileName.cpp(50,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Juez5-3.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-3\x64\Debug\Juez5-3.exe
