@@ -14,10 +14,18 @@ int bongo(const vector<int>& v, int num, int ini, int fin) {
 
 		int m = (ini + fin) / 2;
 
-		int izq = bongo(v, num, ini, m);
-		int dcha = bongo(v, num, m+1, fin);
+		if (v[m] == m + num) return v[m];
 
-		return max(izq, dcha);
+		if (v[m] > m + num) {
+			return bongo(v, num, ini, m);
+		}
+		else
+			return bongo(v, num, m+1, fin);
+
+		//int izq = bongo(v, num, ini, m);
+		//int dcha = bongo(v, num, m+1, fin);
+
+		//return max(izq, dcha);
 
 	}
 }

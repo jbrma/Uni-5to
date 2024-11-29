@@ -12,10 +12,9 @@ int concava(const vector<int>& v, int ini, int fin) {
 
 		int m = (ini + fin) / 2;
 
-		int izq = concava(v, ini, m);
-		int dcha = concava(v, m+1, fin);
+		if (v[m] < v[m + 1]) return concava(v, ini, m);
+		else return concava(v, m + 1, fin);
 
-		return min(izq, dcha);
 	}
 }
 
