@@ -1,0 +1,4 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez4-10 Polidivisibles\FileName.cpp(22,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez4-10 Polidivisibles\FileName.cpp(50,26): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+  Juez4-10 Polidivisibles.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\FAL\Juez4-10 Polidivisibles\x64\Debug\Juez4-10 Polidivisibles.exe
