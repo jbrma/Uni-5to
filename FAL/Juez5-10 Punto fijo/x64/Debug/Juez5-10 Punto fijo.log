@@ -1,0 +1,5 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-10 Punto fijo\FileName.cpp(20,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-10 Punto fijo\FileName.cpp(23,21): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-10 Punto fijo\FileName.cpp(26,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Juez5-10 Punto fijo.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\FAL\Juez5-10 Punto fijo\x64\Debug\Juez5-10 Punto fijo.exe

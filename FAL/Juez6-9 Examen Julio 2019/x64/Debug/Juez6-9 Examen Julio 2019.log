@@ -1,0 +1,4 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez6-9 Examen Julio 2019\FileName.cpp(81,8): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez6-9 Examen Julio 2019\FileName.cpp(56,8): warning C4101: 't': unreferenced local variable
+  Juez6-9 Examen Julio 2019.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\FAL\Juez6-9 Examen Julio 2019\x64\Debug\Juez6-9 Examen Julio 2019.exe
