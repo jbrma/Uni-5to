@@ -19,6 +19,11 @@
  * Terminamos con la salida, que es un for que recorre cada clave del mapa y muestra los minutos acumulados, siempre
  * y cuando sean mayor que 0.
  * 
+ * 
+ * Creación de la cola: O(ClogC)
+ * Consultas: O(NlogC)
+ * Salida ordenada: O(ClogC)
+ * 
  */
 
 #include <fstream>
@@ -41,6 +46,7 @@ bool resuelveCaso() {
     cin >> D >> C >> N;
     if (!cin)
         return false;
+
 
     IndexPQ<int, greater<int>> canales(C+1);
     Telemaco tel;
@@ -87,15 +93,27 @@ bool resuelveCaso() {
 
     tel.mins[canales.top().elem - 1].second += D - minsActual;
 
-    
+    priority_queue<pair<int, int>> pq;
     for (int i = 0; i < C; i++) {
-        auto a = tel.mins[canales.top().elem-1].second;
-        auto c = canales.top().elem;
-
-        if (a > 0)
-            cout << c << " " << a << "\n";
-        canales.pop();
+        if (tel.mins[i].second > 0) {
+            pq.push({tel.mins[i].second, -(i + 1) });
+        }
     }
+
+    while (!pq.empty()) {
+        auto a = pq.top();
+        cout << -a.second << " " << a.first << "\n";
+        pq.pop();
+    }
+    
+    //for (int i = 0; i < C; i++) {
+    //    auto a = tel.mins[canales.top().elem-1].second;
+    //    auto c = canales.top().elem;
+
+    //    if (a > 0)
+    //        cout << c << " " << a << "\n";
+    //    canales.pop();
+    //}
 
     cout << "---\n";
 

@@ -1,0 +1,17 @@
+﻿  FileName.cpp
+C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\PriorityQueue.h(46,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'FileName.cpp')
+  C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\PriorityQueue.h(46,29):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\FileName.cpp(29,5):
+  	see reference to class template instantiation 'PriorityQueue<int,std::less<int>>' being compiled
+  	C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\PriorityQueue.h(44,10):
+  	while compiling class template member function 'void PriorityQueue<int,std::less<int>>::push(const T &)'
+          with
+          [
+              T=int
+          ]
+  		C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\FileName.cpp(38,16):
+  		see the first reference to 'PriorityQueue<int,std::less<int>>::push' in 'esfuerzo'
+  
+  Juez2-1 Lo que cuesta sumar.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\FAL\Juez2-1 Lo que cuesta sumar\x64\Debug\Juez2-1 Lo que cuesta sumar.exe
