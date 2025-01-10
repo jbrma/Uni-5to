@@ -18,22 +18,19 @@ int longitudM(const vector<int>& v, int k) {
 
 	int i = 0, j = 0, acum = 0, sol = v.size() + 1;
 
-	while (j <= v.size()) {
+	while (j < v.size() || acum >= k) {
 
-		if (acum == k) {
-			sol = min(sol, j - i);
-		}
-
-		if (acum < k && j < v.size()) {
+		if (acum < k) {
 			acum += v[j];
 			j++;
 		}
-		else if (i < v.size()){
+		else {
 			acum -= v[i];
 			i++;
 		}
-		else {
-			j++;
+
+		if (acum == k) {
+			sol = min(sol, j - i);
 		}
 	}
 
