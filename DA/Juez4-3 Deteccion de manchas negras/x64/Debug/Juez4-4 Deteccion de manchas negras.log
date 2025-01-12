@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\jorge\Documents\Uni - 5to\DA\Juez4-4 Deteccion de manchas negras\Source.cpp(30,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\jorge\Documents\Uni - 5to\DA\Juez4-4 Deteccion de manchas negras\Source.cpp(30,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Juez4-4 Deteccion de manchas negras.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\DA\Juez4-4 Deteccion de manchas negras\x64\Debug\Juez4-4 Deteccion de manchas negras.exe

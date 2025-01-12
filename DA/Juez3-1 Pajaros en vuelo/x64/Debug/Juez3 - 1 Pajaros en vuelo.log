@@ -1,0 +1,17 @@
+﻿  Source.cpp
+C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\PriorityQueue.h(46,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Source.cpp')
+  C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\PriorityQueue.h(46,29):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\Source.cpp(19,24):
+  	see reference to class template instantiation 'PriorityQueue<int,std::less<int>>' being compiled
+  	C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\PriorityQueue.h(44,10):
+  	while compiling class template member function 'void PriorityQueue<int,std::less<int>>::push(const T &)'
+          with
+          [
+              T=int
+          ]
+  		C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\Source.cpp(28,25):
+  		see the first reference to 'PriorityQueue<int,std::less<int>>::push' in 'resuelveCaso'
+  
+  Juez3 - 1 Pajaros en vuelo.vcxproj -> C:\Users\jorge\Documents\Uni - 5to\DA\Juez3 - 1 Pajaros en vuelo\x64\Debug\Juez3 - 1 Pajaros en vuelo.exe
