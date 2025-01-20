@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jan 20 15:02:13 2025
+# Process ID: 25928
+# Current directory: C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1\vivado.jou
+# Running On: INSPIRON, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16849 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/ip_repo/conversor_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/ip_repo/potenciometro_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/ip_repo/matriz_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/ip_repo/teclado_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/ip_repo/rgb_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/{C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.cache/ip} 
+Command: link_design -top design_1_wrapper -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 961.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 850 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/U0'
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Parsing XDC File [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'conv_clock_0'. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:333]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:333]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'conv_clock_0'. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:334]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:334]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row_reset_0'. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:392]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:392]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row_reset_0'. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:393]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc:393]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.srcs/constrs_1/new/Basys3_Master.xdc]
+Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1698.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 416 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 272 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 16 instances
+
+17 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.898 . Memory (MB): peak = 1698.277 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1bd3bf8ca
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 1716.859 ; gain = 18.582
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "wr_clk_period": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "rd_clk_period_2": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:33]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [c:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/.Xil/Vivado-25928-INSPIRON/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:36]
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2096.418 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 286564ab5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2096.418 ; gain = 21.457
+
+Phase 2 Retarget
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 28 pins
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 22b78a27d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-389] Phase Retarget created 9 cells and removed 56 cells
+INFO: [Opt 31-1021] In phase Retarget, 307 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 2065d1576
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-389] Phase Constant propagation created 5 cells and removed 38 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 257 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 22417f783
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-389] Phase Sweep created 14 cells and removed 64 cells
+INFO: [Opt 31-1021] In phase Sweep, 1075 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/conversor_0/U0/conversor_v1_0_S00_AXI_inst/divisor/clk_aux_reg_0_BUFG_inst to drive 4755 load(s) on clock net design_1_i/conversor_0/U0/conversor_v1_0_S00_AXI_inst/divisor/clk_aux_reg_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 39 load(s) on clock net design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 16795bf7e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 22295d839
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 23942e753
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2096.418 ; gain = 21.457
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 265 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               9  |              56  |                                            307  |
+|  Constant propagation         |               5  |              38  |                                            257  |
+|  Sweep                        |              14  |              64  |                                           1075  |
+|  BUFG optimization            |               2  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            265  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2096.418 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1d090cf9c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2096.418 ; gain = 21.457
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 10 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 10 newly gated: 0 Total Ports: 20
+Ending PowerOpt Patch Enables Task | Checksum: 1f2240dbf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1f2240dbf
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2206.773 ; gain = 110.355
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 15c4a4064
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.951 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 15c4a4064
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2206.773 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15c4a4064
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2206.773 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 7 Warnings, 14 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2206.773 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jorge/Documents/Uni - 5to/SE/Practica4/Practica4/Practica3/Practica3/Practica3.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 125e6d987
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2206.773 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (32) is greater than number of available sites (24).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  BiDi RangeId: 1 Drv: 12  has only 24 sites available on device, but needs 32 sites.
+	Term: dip_switches_16bits_tri_io[0]
+	Term: dip_switches_16bits_tri_io[1]
+	Term: dip_switches_16bits_tri_io[2]
+	Term: dip_switches_16bits_tri_io[3]
+	Term: dip_switches_16bits_tri_io[4]
+	Term: dip_switches_16bits_tri_io[5]
+	Term: dip_switches_16bits_tri_io[6]
+	Term: dip_switches_16bits_tri_io[7]
+	Term: dip_switches_16bits_tri_io[8]
+	Term: dip_switches_16bits_tri_io[9]
+	Term: dip_switches_16bits_tri_io[10]
+	Term: dip_switches_16bits_tri_io[11]
+	Term: dip_switches_16bits_tri_io[12]
+	Term: dip_switches_16bits_tri_io[13]
+	Term: dip_switches_16bits_tri_io[14]
+	Term: dip_switches_16bits_tri_io[15]
+	Term: dip_switches_16bits_tri_io[16]
+	Term: dip_switches_16bits_tri_io[17]
+	Term: dip_switches_16bits_tri_io[18]
+	Term: dip_switches_16bits_tri_io[19]
+	Term: dip_switches_16bits_tri_io[20]
+	Term: dip_switches_16bits_tri_io[21]
+	Term: dip_switches_16bits_tri_io[22]
+	Term: dip_switches_16bits_tri_io[23]
+	Term: dip_switches_16bits_tri_io[24]
+	Term: dip_switches_16bits_tri_io[25]
+	Term: dip_switches_16bits_tri_io[26]
+	Term: dip_switches_16bits_tri_io[27]
+	Term: dip_switches_16bits_tri_io[28]
+	Term: dip_switches_16bits_tri_io[29]
+	Term: dip_switches_16bits_tri_io[30]
+	Term: dip_switches_16bits_tri_io[31]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (62) is greater than number of available sites (24).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  BiDi RangeId: 1 Drv: 12  has only 24 sites available on device, but needs 32 sites.
+	Term: dip_switches_16bits_tri_io[0]
+	Term: dip_switches_16bits_tri_io[1]
+	Term: dip_switches_16bits_tri_io[2]
+	Term: dip_switches_16bits_tri_io[3]
+	Term: dip_switches_16bits_tri_io[4]
+	Term: dip_switches_16bits_tri_io[5]
+	Term: dip_switches_16bits_tri_io[6]
+	Term: dip_switches_16bits_tri_io[7]
+	Term: dip_switches_16bits_tri_io[8]
+	Term: dip_switches_16bits_tri_io[9]
+	Term: dip_switches_16bits_tri_io[10]
+	Term: dip_switches_16bits_tri_io[11]
+	Term: dip_switches_16bits_tri_io[12]
+	Term: dip_switches_16bits_tri_io[13]
+	Term: dip_switches_16bits_tri_io[14]
+	Term: dip_switches_16bits_tri_io[15]
+	Term: dip_switches_16bits_tri_io[16]
+	Term: dip_switches_16bits_tri_io[17]
+	Term: dip_switches_16bits_tri_io[18]
+	Term: dip_switches_16bits_tri_io[19]
+	Term: dip_switches_16bits_tri_io[20]
+	Term: dip_switches_16bits_tri_io[21]
+	Term: dip_switches_16bits_tri_io[22]
+	Term: dip_switches_16bits_tri_io[23]
+	Term: dip_switches_16bits_tri_io[24]
+	Term: dip_switches_16bits_tri_io[25]
+	Term: dip_switches_16bits_tri_io[26]
+	Term: dip_switches_16bits_tri_io[27]
+	Term: dip_switches_16bits_tri_io[28]
+	Term: dip_switches_16bits_tri_io[29]
+	Term: dip_switches_16bits_tri_io[30]
+	Term: dip_switches_16bits_tri_io[31]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |     6 | LVCMOS33(6)                                                            |                                          |        |  +3.30 |    YES |     |
+| 16 |    12 |     3 | LVCMOS33(3)                                                            |                                          |        |  +3.30 |    YES |     |
+| 34 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    20 |    11 | LVCMOS33(11)                                                           |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   106 |    20 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | col_clk_0            | LVCMOS33        | IOB_X0Y21            | R18                  |                      |
+|        | col_serial_out_0     | LVCMOS33        | IOB_X0Y22            | P18                  |                      |
+|        | conv_data_0[0]       | LVCMOS33        | IOB_X0Y27            | M19                  |                      |
+|        | conv_data_0[1]       | LVCMOS33        | IOB_X0Y28            | M18                  |                      |
+|        | conv_data_0[2]       | LVCMOS33        | IOB_X0Y26            | L17                  |                      |
+|        | conv_data_0[3]       | LVCMOS33        | IOB_X0Y25            | K17                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 16     | reset_out_0          | LVCMOS33        | IOB_X0Y125           | A17                  |                      |
+|        | row_clk_0            | LVCMOS33        | IOB_X0Y126           | A16                  |                      |
+|        | row_serial_out_0     | LVCMOS33        | IOB_X0Y137           | A15                  | *                    |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | conv_addr_0[0]       | LVCMOS33        | IOB_X1Y82            | M2                   |                      |
+|        | conv_addr_0[1]       | LVCMOS33        | IOB_X1Y81            | M1                   |                      |
+|        | conv_addr_0[2]       | LVCMOS33        | IOB_X1Y80            | N2                   |                      |
+|        | conv_ale_0           | LVCMOS33        | IOB_X1Y79            | N1                   |                      |
+|        | conv_data_0[4]       | LVCMOS33        | IOB_X1Y97            | G2                   |                      |
+|        | conv_data_0[5]       | LVCMOS33        | IOB_X1Y96            | H2                   |                      |
+|        | conv_data_0[6]       | LVCMOS33        | IOB_X1Y95            | J2                   |                      |
+|        | conv_data_0[7]       | LVCMOS33        | IOB_X1Y90            | K2                   |                      |
+|        | conv_eoc_0           | LVCMOS33        | IOB_X1Y98            | G3                   |                      |
+|        | conv_oe_0            | LVCMOS33        | IOB_X1Y83            | M3                   |                      |
+|        | conv_start_0         | LVCMOS33        | IOB_X1Y84            | L3                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 19a0e582b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.545 . Memory (MB): peak = 2206.773 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 19a0e582b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.547 . Memory (MB): peak = 2206.773 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1b34704e0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.550 . Memory (MB): peak = 2206.773 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 7 Warnings, 14 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 20 15:04:10 2025...
