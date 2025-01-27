@@ -1,0 +1,300 @@
+
+*** Running vivado
+    with args -log design_4_matriz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_4_matriz_0_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_4_matriz_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1944.852 ; gain = 196.855
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/usuario_local/Downloads/Practica4_1/ip_repo/matriz_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/electronica/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_4_matriz_0_0
+Command: synth_design -top design_4_matriz_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18160
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2767.664 ; gain = 410.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_4_matriz_0_0' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:88]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matriz_v1_0' declared at 'c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0.vhd:5' bound to instance 'U0' of component 'matriz_v1_0' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'matriz_v1_0' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0.vhd:54]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matriz_v1_0_S00_AXI' declared at 'c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:5' bound to instance 'matriz_v1_0_S00_AXI_inst' of component 'matriz_v1_0_S00_AXI' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'matriz_v1_0_S00_AXI' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:91]
+INFO: [Synth 8-226] default block is never used [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:258]
+INFO: [Synth 8-226] default block is never used [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:390]
+INFO: [Synth 8-3491] module 'bannerDesp' declared at 'c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/src/bannerDesp.vhd:30' bound to instance 'inst1' of component 'bannerDesp' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'bannerDesp' [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/src/bannerDesp.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bannerDesp' (0#1) [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/src/bannerDesp.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0_S00_AXI' (0#1) [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0_S00_AXI.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0' (0#1) [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ipshared/f207/hdl/matriz_v1_0.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'design_4_matriz_0_0' (0#1) [c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:88]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module matriz_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2865.742 ; gain = 508.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2883.645 ; gain = 526.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2883.645 ; gain = 526.285
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2883.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.365 . Memory (MB): peak = 2990.320 ; gain = 0.039
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               13 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_4_matriz_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_4_matriz_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_4_matriz_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_4_matriz_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_4_matriz_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_4_matriz_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+|Module Name         | RTL Object                                | Inference | Size (Depth x Width) | Primitives   | 
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+|design_4_matriz_0_0 | U0/matriz_v1_0_S00_AXI_inst/inst1/RAM_reg | Implied   | 64 x 5               | RAM64M x 16  | 
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+|Module Name         | RTL Object                                | Inference | Size (Depth x Width) | Primitives   | 
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+|design_4_matriz_0_0 | U0/matriz_v1_0_S00_AXI_inst/inst1/RAM_reg | Implied   | 64 x 5               | RAM64M x 16  | 
++--------------------+-------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     7|
+|2     |LUT1   |     1|
+|3     |LUT2   |    49|
+|4     |LUT3   |    48|
+|5     |LUT4   |    22|
+|6     |LUT5   |     7|
+|7     |LUT6   |    73|
+|8     |RAM64M |    16|
+|9     |FDCE   |    99|
+|10    |FDPE   |     3|
+|11    |FDRE   |   169|
+|12    |FDSE   |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.320 ; gain = 526.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2990.320 ; gain = 632.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2990.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2990.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 16 instances
+
+Synth Design complete | Checksum: 176b2904
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 2990.320 ; gain = 1011.414
+INFO: [Common 17-1381] The checkpoint 'C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_matriz_0_0_synth_1/design_4_matriz_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_4_matriz_0_0, cache-ID = 7ec8f424c7a86a59
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_matriz_0_0_synth_1/design_4_matriz_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_4_matriz_0_0_utilization_synth.rpt -pb design_4_matriz_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 14:46:42 2025...

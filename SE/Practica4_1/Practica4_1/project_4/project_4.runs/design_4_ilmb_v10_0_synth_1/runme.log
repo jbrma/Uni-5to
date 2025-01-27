@@ -1,0 +1,27 @@
+
+*** Running vivado
+    with args -log design_4_ilmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_4_ilmb_v10_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_4_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.203 ; gain = 197.227
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/usuario_local/Downloads/Practica4_1/ip_repo/matriz_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/electronica/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_4_ilmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry e0fda79e47304aa5 to dir: C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.cache/ip/2023.1/e/0/e0fda79e47304aa5/design_4_dlmb_v10_0.dcp to C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1/design_4_ilmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.cache/ip/2023.1/e/0/e0fda79e47304aa5/design_4_dlmb_v10_0_sim_netlist.v to C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1/design_4_ilmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.cache/ip/2023.1/e/0/e0fda79e47304aa5/design_4_dlmb_v10_0_sim_netlist.vhdl to C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1/design_4_ilmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.cache/ip/2023.1/e/0/e0fda79e47304aa5/design_4_dlmb_v10_0_stub.v to C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1/design_4_ilmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.cache/ip/2023.1/e/0/e0fda79e47304aa5/design_4_dlmb_v10_0_stub.vhdl to C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_ilmb_v10_0_synth_1/design_4_ilmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_4_ilmb_v10_0, cache-ID = e0fda79e47304aa5.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 14:47:14 2025...

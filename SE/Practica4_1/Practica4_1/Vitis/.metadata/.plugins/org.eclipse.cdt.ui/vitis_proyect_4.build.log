@@ -1,0 +1,24 @@
+15:57:16 **** Incremental Build of configuration Debug for project vitis_proyect_4 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -IC:/Users/usuario_local/Downloads/Practica4_1/Vitis/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c:7:25: warning: extra tokens at end of #include directive
+    7 | #include "conversorad.h";
+      |                         ^
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: vitis_proyect_4.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/usuario_local/Downloads/Practica4_1/Vitis/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vitis_proyect_4.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vitis_proyect_4.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size vitis_proyect_4.elf  |tee "vitis_proyect_4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6880	    380	   3108	  10368	   2880	vitis_proyect_4.elf
+'Finished building: vitis_proyect_4.elf.size'
+' '
+
+15:57:16 Build Finished (took 335ms)
+

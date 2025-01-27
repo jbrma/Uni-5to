@@ -1,0 +1,76 @@
+15:15:47 DEBUG : Logs will be stored at 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/IDE.log'.
+15:15:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\usuario_local\Downloads\Practica4_1\Vitis\temp_xsdb_launch_script.tcl
+15:15:50 INFO  : Registering command handlers for Vitis TCF services
+15:15:50 INFO  : Platform repository initialization has completed.
+15:15:51 INFO  : XSCT server has started successfully.
+15:15:51 INFO  : Successfully done setting XSCT server connection channel  
+15:15:51 INFO  : plnx-install-location is set to ''
+15:15:51 INFO  : Successfully done setting workspace for the tool. 
+15:15:51 INFO  : Successfully done query RDI_DATADIR 
+15:16:16 INFO  : Result from executing command 'getProjects': design_4_wrapper
+15:16:16 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:16:16 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:16:17 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+15:16:18 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+15:16:40 INFO  : Result from executing command 'getProjects': design_4_wrapper
+15:16:40 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:16:41 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:17:12 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:17:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:17:16 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:17:55 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:18:12 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:18:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:18:13 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:19:46 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:20:07 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:20:35 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:20:49 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:20:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:20:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:20:50 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:21:17 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:21:26 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:21:41 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:21:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:21:43 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:22:09 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:22:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:22:10 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:22:59 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:23:13 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:23:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:23:15 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:28:26 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:28:49 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:29:09 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:29:30 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:29:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:29:31 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:44:18 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:44:37 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:44:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:44:38 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:45:47 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:46:11 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:46:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:46:12 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:55:28 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:55:48 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:56:10 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:56:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:56:11 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"
+15:57:16 INFO  : Checking for BSP changes to sync application flags for project 'vitis_proyect_4'...
+15:57:33 INFO  : Bit file 'C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit' is generated.
+15:57:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CAFA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CAFA-0362d093-0"}' command is executed.
+15:57:35 INFO  : Device configured successfully with "C:/Users/usuario_local/Downloads/Practica4_1/Vitis/vitis_proyect_4/_ide/bitstream/download.bit"

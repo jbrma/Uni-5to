@@ -1,0 +1,35 @@
+17:49:20 **** Incremental Build of configuration Debug for project vitis_proyect_5 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -IC:/Users/usuario_local/Downloads/Practica5/vitis/design_5_wrapper/export/design_5_wrapper/sw/design_5_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+In file included from ../src/testperiph.c:36:
+C:/Users/usuario_local/Downloads/Practica5/vitis/design_5_wrapper/export/design_5_wrapper/sw/design_5_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/usuario_local/Downloads/Practica5/vitis/design_5_wrapper/export/design_5_wrapper/sw/design_5_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:56:32: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   56 |                         byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+      |                                ^~~~~~~~~~~~~~~~~~
+../src/testperiph.c:58:25: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   58 |                         XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR, byte);
+      |                         ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: vitis_proyect_5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/usuario_local/Downloads/Practica5/vitis/design_5_wrapper/export/design_5_wrapper/sw/design_5_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vitis_proyect_5.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vitis_proyect_5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size vitis_proyect_5.elf  |tee "vitis_proyect_5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6812	    268	   3112	  10192	   27d0	vitis_proyect_5.elf
+'Finished building: vitis_proyect_5.elf.size'
+' '
+
+17:49:20 Build Finished (took 340ms)
+

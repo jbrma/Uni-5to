@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jan 17 14:45:32 2025
+# Process ID: 18408
+# Current directory: C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_lmb_bram_0_synth_1
+# Command line: vivado.exe -log design_4_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_4_lmb_bram_0.tcl
+# Log file: C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_lmb_bram_0_synth_1/design_4_lmb_bram_0.vds
+# Journal file: C:/Users/usuario_local/Downloads/Practica4_1/project_4/project_4.runs/design_4_lmb_bram_0_synth_1\vivado.jou
+# Running On: PTO0802, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 34013 MB
+#-----------------------------------------------------------
+source design_4_lmb_bram_0.tcl -notrace

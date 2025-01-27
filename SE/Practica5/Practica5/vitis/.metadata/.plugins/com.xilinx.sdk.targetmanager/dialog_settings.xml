@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="vitis_proyect_5_system-bitFile" value="${project_loc:vitis_proyect_5}/_ide/bitstream/design_5_wrapper.bit"/>
+	<item key="vitis_proyect_5_system-bmmFile" value="${project_loc:vitis_proyect_5}/_ide/bitstream/design_5_wrapper.mmi"/>
+	<item key="vitis_proyect_5_system-target" value="Local"/>
+	<item key="vitis_proyect_5_system-device" value="Auto Detect"/>
+	<item key="vitis_proyect_5_system-partial_bit" value="false"/>
+	<item key="vitis_proyect_5_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="vitis_proyect_5_system"/>
+	<item key="vitis_proyect_5_system-microblaze_0-initElf" value="C:\Users\usuario_local\Downloads\Practica5\vitis\vitis_proyect_5\Debug\vitis_proyect_5.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7CAFA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7CAFA-0362d093-0&quot;}}]}"/>
+</section>

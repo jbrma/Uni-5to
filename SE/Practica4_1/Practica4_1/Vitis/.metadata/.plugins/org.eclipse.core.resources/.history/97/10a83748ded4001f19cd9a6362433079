@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+#include "matriz.h"
+#include "conversorad.h";
+#include "xil_printf.h"
+
+// Patrones de las letras
+int L[7] = {16, 16, 16, 16, 16, 16, 31}; // Letra L
+int U[7] = {17, 17, 17, 17, 17, 17, 31}; // Letra U
+int C[7] = {31, 16, 16, 16, 16, 16, 31}; // Letra C
+int A[7] = {31, 17, 17, 31, 17, 17, 17}; // Letra A
+
+// Array con las letras "LUCA"
+int *Luca[4] = {A, C, U, L};
+
+// Escribe un valor en la matriz de puntos
+void printDatos(int fila, int columna, int dato) {
+    int data = ((fila & 0xff) << 24) |
+               ((columna & 0xff) << 17) |
+               ((dato & 0xff) << 8);
+    MATRIZ_mWriteReg(XPAR_MATRIZ_0_S00_AXI_BASEADDR,
+                            MATRIZ_S00_AXI_SLV_REG0_OFFSET,
+                            data);
+}
+
+// Imprime una letra en una columna inicial específica
+void printLetra(int letra[7], int columnaInicio) {
+    for (int fila = 0; fila < 7; fila++) {
+        printDatos(fila, columnaInicio, letra[fila]);
+    }
+}
+
+// Limpia toda la matriz de puntos
+void limpiarMatrizPuntos() {
+    for (int fila = 0; fila < 7; fila++) {
+        for (int columna = 0; columna < 40; columna++) { // Limpieza total de columnas
+            printDatos(fila, columna, 0);
+        }
+    }
+}
+
+// Escribe la palabra "LUCA" en la matriz de puntos
+void escribirLuca() {
+    int columnaInicio = 0; // Columna inicial para la primera letra
+    for (int i = 0; i < 4; i++) { // 4 letras
+        printLetra(Luca[i], columnaInicio);
+        columnaInicio += 4; // Separación de 6 columnas entre letras
+    }
+}
+
+int main() {
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+    print("---Entering main---\n\r");
+
+    xil_printf("Antes de pintar la matriz de puntos\n");
+
+    limpiarMatrizPuntos();
+    escribirLuca();
+
+    xil_printf("Escribiendo LUCA en la matriz de puntos\n");
+
+    print("---Exiting main---\n\r");
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+
+    return 0;
+}

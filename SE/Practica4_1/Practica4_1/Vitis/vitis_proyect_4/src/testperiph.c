@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <math.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+#include "matriz.h"
+#include "conversorad.h";
+#include "xil_printf.h"
+
+// Patrones de las letras
+int FB[7] = {4, 4, 4, 4, 21, 14, 4}; // Flecha hacia abajo
+int FA[7] = {4, 14, 21, 4, 4, 4, 4}; // Flecha hacia arriba
+int FD[7] = {0, 4, 2, 31, 2, 4, 0}; // Flecha hacia la derecha
+int FI[7] = {0, 4, 8, 31, 8, 4, 0}; // Flecha hacia la izquierda
+
+
+// Escribe un valor en la matriz de puntos
+void printDatos(int fila, int columna, int dato) {
+    int data = ((fila & 0xff) << 24) |
+               ((columna & 0xff) << 17) |
+               ((dato & 0xff) << 8);
+    MATRIZ_mWriteReg(XPAR_MATRIZ_0_S00_AXI_BASEADDR,
+                            MATRIZ_S00_AXI_SLV_REG0_OFFSET,
+                            data);
+}
+
+// Imprime una letra en una columna inicial específica
+void printLetra(int letra[7], int columnaInicio) {
+    for (int fila = 0; fila < 7; fila++) {
+        printDatos(fila, columnaInicio, letra[fila]);
+    }
+}
+
+// Limpia toda la matriz de puntos
+void limpiarMatrizPuntos() {
+    for (int fila = 0; fila < 7; fila++) {
+        for (int columna = 0; columna < 40; columna++) { // Limpieza total de columnas
+            printDatos(fila, columna, 0);
+        }
+    }
+}
+
+// Escribe la palabra "LUCA" en la matriz de puntos
+void escribirFlechaArriba() {
+    int columnaInicio = 0; // Columna inicial para la primera letra
+	printLetra(FA, columnaInicio);
+	columnaInicio += 6; // Separación de 6 columnas entre letras
+
+}
+
+// Escribe la palabra "LUCA" en la matriz de puntos
+void escribirFlechaAbajo() {
+    int columnaInicio = 0; // Columna inicial para la primera letra
+	printLetra(FB, columnaInicio);
+	columnaInicio += 6; // Separación de 6 columnas entre letras
+}
+
+// Escribe la palabra "LUCA" en la matriz de puntos
+void escribirFlechaDer() {
+    int columnaInicio = 0; // Columna inicial para la primera letra
+	printLetra(FD, columnaInicio);
+	columnaInicio += 6; // Separación de 6 columnas entre letras
+}
+
+// Escribe la palabra "LUCA" en la matriz de puntos
+void escribirFlechaIzq() {
+    int columnaInicio = 0; // Columna inicial para la primera letra
+	printLetra(FI, columnaInicio);
+	columnaInicio += 6; // Separación de 6 columnas entre letras
+}
+
+
+int main() {
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+    print("---Entering main---\n\r");
+
+    xil_printf("Antes de pintar la matriz de puntos\n\r");
+
+    limpiarMatrizPuntos();
+    int analog, valid, uno = (5<<23);
+    CONVERSORAD_mWriteReg(XPAR_CONVERSORAD_0_S00_AXI_BASEADDR,CONVERSORAD_S00_AXI_SLV_REG0_OFFSET, uno);
+
+
+    while(1) {
+    	valid = CONVERSORAD_mReadReg(XPAR_CONVERSORAD_0_S00_AXI_BASEADDR,CONVERSORAD_S00_AXI_SLV_REG0_OFFSET);
+    	    analog = CONVERSORAD_mReadReg(XPAR_CONVERSORAD_0_S00_AXI_BASEADDR,CONVERSORAD_S00_AXI_SLV_REG1_OFFSET);
+
+    	    if(valid >= pow(2, 24)){
+    	    	xil_printf("%d\n\r", analog);
+    	    	if (analog < 40) {
+    	    		limpiarMatrizPuntos();
+    	    		escribirFlechaDer();
+    	    	}
+    	    	else if (analog < 81) {
+    	    		limpiarMatrizPuntos();
+					escribirFlechaArriba();
+    	    	}
+    	    	else if (analog < 121) {
+					limpiarMatrizPuntos();
+					escribirFlechaIzq();
+				}
+    	    	else {
+					limpiarMatrizPuntos();
+					escribirFlechaAbajo();
+				}
+    	    }
+
+    	    CONVERSORAD_mWriteReg(XPAR_CONVERSORAD_0_S00_AXI_BASEADDR,CONVERSORAD_S00_AXI_SLV_REG0_OFFSET, uno);
+    }
+
+    print("---Exiting main---\n\r");
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+
+    return 0;
+}
